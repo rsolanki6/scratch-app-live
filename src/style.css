@@ -1,25 +1,75 @@
-body
-{
-     margin: 0;
-     padding: 0;
-     background-color: blue;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
 }
 
-.app
-{
-     width: 30%;
-     height: auto;
-     margin: auto;
-     padding: 2px;
-     margin-top: 5%;
-     background-color: black;
-     color: white;
-     border-radius: 25px;
+.app {
+  width: 95%;
+  max-width: 400px;
+  height: auto;
+  margin: 8% auto 5%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  box-sizing: border-box;
 }
 
-.app h1{
-     text-align: center;
-     padding: 2px;
-     font-size: 20px;
-     font-weight: 200;
+.app h1 {
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0;
+}
+
+/* Large Phone / Small Tablet (420px and up) */
+@media screen and (min-width: 420px) {
+  .app {
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    margin-top: 6%;
+  }
+  
+  .app h1 {
+    font-size: 20px;
+    padding: 15px 10px;
+  }
+}
+
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+  .app {
+    width: 60%;
+    max-width: 600px;
+    padding: 25px;
+  }
+  
+  .app h1 {
+    font-size: 22px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+  .app {
+    width: 30%;
+    max-width: 700px;
+    padding: 30px;
+    margin-top: 5%;
+  }
+  
+  .app h1 {
+    font-size: 24px;
+  }
+}
+
+/* Large Desktop (1440px and up) */
+@media screen and (min-width: 1440px) {
+  .app {
+    max-width: 800px;
+    padding: 35px;
+  }
 }
